@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell_NonePic" rowHeight="124" id="KGk-i7-Jjw" customClass="TableViewCell_NonePic">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pec-pq-7bN">
+                        <rect key="frame" x="10" y="15" width="300" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="iBS-Z9-mng"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="longTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oy-PE-FMT">
+                        <rect key="frame" x="10" y="46" width="300" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9AF-Gl-3sx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Oy-PE-FMT" firstAttribute="leading" secondItem="pec-pq-7bN" secondAttribute="leading" id="MeH-nU-aQi"/>
+                    <constraint firstItem="pec-pq-7bN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XYe-Kn-uwJ"/>
+                    <constraint firstAttribute="trailing" secondItem="pec-pq-7bN" secondAttribute="trailing" constant="10" id="apB-dx-IDP"/>
+                    <constraint firstItem="9Oy-PE-FMT" firstAttribute="trailing" secondItem="pec-pq-7bN" secondAttribute="trailing" id="iie-gI-zl2"/>
+                    <constraint firstItem="pec-pq-7bN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="mcO-B1-w2f"/>
+                    <constraint firstItem="9Oy-PE-FMT" firstAttribute="top" secondItem="pec-pq-7bN" secondAttribute="bottom" constant="10" id="ufb-fJ-IER"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelLongTitle" destination="9Oy-PE-FMT" id="dG9-KN-tap"/>
+                <outlet property="labelTitle" destination="pec-pq-7bN" id="lha-cf-rGW"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="318"/>
+        </tableViewCell>
+    </objects>
+</document>
